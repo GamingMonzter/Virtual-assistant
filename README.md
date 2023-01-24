@@ -1,8 +1,3 @@
-""" Virtual-assistant
-An easy Python code for a virtual assistant.
-
-Import modules"""
-
 import pyttsx3
 import speech_recognition as sr
 import os
@@ -12,8 +7,6 @@ import pyjokes
 import randfacts
 import random
 import requests 
-
-# Engine
 
 engine=pyttsx3.init("sapi5")
 voices=engine.getProperty("voices")
@@ -39,8 +32,6 @@ def takecommand():
         speak("Say that again please...")
         return "None"
     return query
-
-# main
 
 if __name__ == "__main__":
     speak("Hello, my name is Edith how may i help you?")
